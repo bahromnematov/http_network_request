@@ -7,6 +7,7 @@ class NewsModels {
     required this.status,
     required this.totalResults,
     required this.articles,
+
   });
 
   factory NewsModels.fromJson(Map<String, dynamic> json) => NewsModels(
