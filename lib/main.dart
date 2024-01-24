@@ -1,21 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:http_network_request/home_page.dart';
+import 'package:http/http.dart' as http;
+import 'package:http_network_request/pages/detail_page.dart';
+import 'package:http_network_request/pages/home_page.dart';
+import 'package:http_network_request/pages/new_parsing_page.dart';
+import 'package:http_network_request/pages/news_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: HomePage()
     );
   }
